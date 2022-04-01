@@ -15,13 +15,14 @@ const ReviewItem = (props) => {
       <div className="review-items-details-container">
         <div className="review-items-details">
           <p className="product-name" title={name}>
-            Name: {name.length > 20 ? name.slice(0, 20) + "..." : name}
+            Name:
+            {name?.length > 20 ? name.slice(0, 20) + "..." : name}
           </p>
           <p>
             Price:
             <span className="orange"> $ {price}</span>
-            <p>Quantity:{quantity}</p>
           </p>
+          <p> Quantity : {quantity}</p>
         </div>
         <div className="review-items-delete">
           <button
